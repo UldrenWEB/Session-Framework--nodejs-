@@ -1,0 +1,11 @@
+{
+    "user": "postgres",
+    "host": "localhost",
+    "database": "sessions",
+    "password": "13270323",
+    "port": 3753,
+    "max": 10,
+    "connectionTimeoutMillis": 20000,
+    "idleTimeoutMillis": 10000,
+    "allowExitOnIdle": false
+}

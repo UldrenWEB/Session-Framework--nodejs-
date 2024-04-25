@@ -1,0 +1,74 @@
+###Probando si la session fue creada exitosamente ->Roberta: niF5nK4Z
+GET http://localhost:1234/login/prueba
+
+###Proabando Usuario
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+    "user": "Sol",
+    "pass": "Sol13270323"
+}
+
+
+###Seleccion de perfil
+GET http://localhost:1234/selectProfile
+
+###Perfil seleccionado
+POST http://localhost:1234/selectProfile
+Content-Type: application/json
+
+{
+    "profile": "3"
+}
+
+###asignQuestionUser
+###Intentanto ejecutar mi objeto de negocio -> Hollaaa
+POST http://localhost:1234/toProcess
+Content-Type: application/json
+
+{
+    "module":"registro",
+    "objName": "register",
+    "method": "registeruser",
+    "params": ["Prueba2", "PasswordPrueba", "prueba@gmail.com"],
+    "system": "seguridad"
+}
+
+
+###El usuario olvido datos
+POST http://localhost:1234/forgetData
+Content-Type: application/json
+
+{
+    "user": "Erika"
+}
+
+###Solicitando las preguntas secretas
+GET http://localhost:1234/secretAnswer
+
+###Enviando Respuesta Secretas
+POST http://localhost:1234/secretAnswer
+Content-Type: application/json
+
+{
+    "resp1": "Bateria Relatiba",
+    "resp2": "No tiene Color"
+}
+
+
+###Cambio de clave, verificacion
+GET http://localhost:1234/keyChange
+
+###Cambio de clave
+POST http://localhost:1234/keyChange
+Content-Type: application/json
+
+{
+    "pass": "erika898",
+    "newPass": "erika89810" 
+}
+
+###Destruyendo sesiones
+GET http://localhost:1234/logaut
+

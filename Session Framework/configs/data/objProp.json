@@ -1,0 +1,8 @@
+{
+    "id": "id_user",
+    "user": "no_user",
+    "pass": "pw_user",
+    "isBlocked": "bl_user",
+    "attemps": "at_user",
+    "email": "em_user"
+}

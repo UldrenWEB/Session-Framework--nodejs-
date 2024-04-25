@@ -1,0 +1,22 @@
+{
+    "selectAllUser": "selectAllUsers",
+    "selectOneUser": "selectOneUser",
+    "reduceCont": "reduceCont",
+    "resetCont": "resetCont",
+    "blockUser": "blockUser",
+    "modifiedPass": "modifiedPass",
+    "returnIdByUserPass": "returnIdByUser",
+    "selectOneUserById": "selectOneUserById",
+    "selectUserForProfile": "selectUserForProfile",
+    "getQuestionUser": "getQuestionUser",
+    "getIdMethod": "getIdMethod",
+    "getIdPermission": "getIdPermission",
+    "existProfile": "existProfile",
+    "deletePermission": "deletePermission",
+    "selectAllModule": "selectAllModule",
+    "selectProfileByUser": "selectProfileByUser",
+    "selectEmailUser": "selectEmailUser",
+    "insertQuestion": "insertQuestion",
+    "insertUser": "insertUser",
+    "deleteUser": "deleteUser"
+}

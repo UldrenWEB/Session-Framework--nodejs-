@@ -1,0 +1,23 @@
+{
+    "selectAllUsers": "SELECT * FROM se_user",
+    "returnIdByUser": "SELECT id_user FROM se_user WHERE no_user = $1 AND pw_user = $2",
+    "selectOneUser": "SELECT * FROM se_user WHERE no_user = $1",
+    "selectOneUserById": "SELECT * FROM se_user WHERE id_user = $1",
+    "reduceCont": "UPDATE se_user set at_user = at_user - 1 WHERE no_user = $1",
+    "resetCont": "UPDATE se_user set at_user = $1 WHERE no_user = $2",
+    "blockUser": "UPDATE se_user set bl_user = $1 WHERE no_user = $2",
+    "modifiedPass": "UPDATE se_user set pw_user = $1 WHERE no_user = $2",
+    "selectUserForProfile": "SELECT sru.no_user FROM user_profile up INNER JOIN se_user sru ON sru.id_user = up.id_user WHERE id_profile = $1",
+    "selectPermission": "SELECT up.id_profile, mdl.no_module, obj.no_object, mth.no_method FROM permission pp INNER JOIN bo_method mth ON mth.id_method = pp.id_method INNER JOIN bo_object obj ON obj.id_object = mth.id_object INNER JOIN module mdl ON mdl.id_module = obj.id_module INNER JOIN profile prf ON prf.id_profile = pp.id_profile INNER JOIN user_profile up ON up.id_profile = prf.id_profile",
+    "addPermission": "INSERT INTO permission (id_profile, id_method) VALUES ($1, $2)",
+    "getQuestionUser": "SELECT q.de_question, q.res_question FROM question q INNER JOIN se_user sru ON sru.id_user = q.id_user WHERE sru.no_user = $1",
+    "getIdMethod": "SELECT id_method FROM bo_method WHERE no_method = $1",
+    "existProfile": "SELECT de_profile FROM profile WHERE id_profile = $1",
+    "deletePermission": "DELETE FROM permission WHERE id_profile = $1",
+    "selectAllModule": "SELECT * FROM module",
+    "selectProfileByUser": "SELECT id_profile FROM user_profile up INNER JOIN se_user sru ON sru.id_user = up.id_user WHERE no_user = $1",
+    "selectEmailUser": "SELECT em_user FROM se_user WHERE no_user = $1",
+    "insertUser": "INSERT INTO se_user (no_user, pw_user, em_user) VALUES ($1, $2, $3)",
+    "insertQuestion": "INSERT INTO question (de_question, res_question, id_user) SELECT $1, $2, id_user FROM se_user WHERE no_user = $3",
+    "deleteUser": "DELETE FROM se_user WHERE no_user = $1"
+}

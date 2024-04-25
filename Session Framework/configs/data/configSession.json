@@ -1,0 +1,6 @@
+{
+    "key": "cookie-session",
+    "secret": "123",
+    "resave": false,
+    "saveUninitialized": false
+}
